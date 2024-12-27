@@ -92,3 +92,57 @@ nav{
         transform: translateX(-100%);
     }
 }
+
+
+@media (max-width: 768px) {
+    .nav-right {
+        flex-direction: column; /* Stack navigation items vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .nav-right > h3 {
+        font-size: 14px; /* Smaller font size for mobile */
+    }
+
+    .section1 {
+        height: 40%; /* Reduce height for smaller screens */
+    }
+
+    .layer > h1 {
+        font-size: 30px; /* Smaller font size for mobile */
+    }
+
+    .section-images {
+        flex-direction: column; /* Stack images vertically */
+        height: auto; /* Allow height to adjust */
+    }
+
+    .sec2-text > img {
+        width: 100%; /* Full width for images */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-right > h3 {
+        font-size: 12px; /* Even smaller font size for very small screens */
+    }
+
+    .layer > h1 {
+        font-size: 24px; /* Further reduce font size */
+    }
+}
+@media (max-width: 768px) {
+    .nav-right {
+        flex-direction: column; /* Stack navigation items */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .nav-right > h3 {
+        font-size: 14px; /* Smaller font size */
+    }
+
+    .section1 {
+        height: 40%; /* Reduce height */
+    }
+}
